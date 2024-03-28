@@ -1,6 +1,6 @@
 {
   "name": "@bccampus/aria-live-broadcast",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Creates an ARIA live region to announce dynamic content updates",
   "homepage": "https://github.com/bccampus/aria-live-broadcast",
   "packageManager": "yarn@4.1.0",
