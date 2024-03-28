@@ -1,0 +1,34 @@
+import { InstallScript } from './components/InstallScript/InstallScript';
+import * as demos from './demos';
+
+## Installation
+
+<InstallScript packages="@bccampus/aria-live-broadcast" />
+
+## Usage
+
+```tsx
+import React, { useState } from 'react';
+import { announce } from '../';
+
+export function Announce({ action }: { action: 'Alert' | 'Select' }) {
+  const [count, setCount] = useState(1);
+
+  const handleClick = () => {
+    announce(`${action} ${count}`, action === 'Alert' ? 'assertive' : 'polite');
+    setCount((prev) => prev + 1);
+  };
+
+  return (
+    <div>
+      <button type="button" onClick={handleClick}>
+        Announce: {action}
+      </button>
+    </div>
+  );
+}
+```
+ 
+## Demo
+
+<Demo data={demos.basicList} /> 

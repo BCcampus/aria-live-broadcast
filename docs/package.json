@@ -1,0 +1,45 @@
+{
+  "name": "aria-live-broadcast-docs",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 9281",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@bccampus/aria-live-broadcast": "workspace:^",
+    "@bccampus/media-kit": "^0.1.0",
+    "@bccampus/react-composite": "^0.2.0",
+    "@mantine/core": "7.7.0",
+    "@mantine/hooks": "7.7.0",
+    "@mantinex/demo": "^1.1.1",
+    "@mantinex/dev-icons": "^1.0.2",
+    "@mantinex/mantine-header": "^1.0.2",
+    "@mantinex/mantine-logo": "^1.0.1",
+    "@mantinex/mantine-meta": "^1.0.2",
+    "@mantinex/shiki": "^1.0.3",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.1.4",
+    "@tabler/icons-react": "^3.1.0",
+    "@types/mdx": "^2.0.12",
+    "next": "14.1.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark-slug": "^7.0.1",
+    "shikiji": "^0.7.6",
+    "type-fest": "^4.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.70",
+    "@types/react-dom": "^18.2.22",
+    "typescript": "5.4.3"
+  },
+  "peerDependenciesMeta": {
+    "webpack": {
+      "optional": true
+    }
+  }
+}

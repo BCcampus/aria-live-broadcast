@@ -1,0 +1,45 @@
+{
+  "name": "@bccampus/aria-live-broadcast",
+  "version": "0.0.1",
+  "description": "Creates an ARIA live region to announce dynamic content updates",
+  "homepage": "https://github.com/bccampus/aria-live-broadcast",
+  "packageManager": "yarn@4.1.0",
+  "license": "MIT",
+  "author": "Kemal Tunador <ktunador@bccampus.ca>",
+  "keywords": [
+    "react",
+    "composite",
+    "treeview",
+    "listbox",
+    "layout grid"
+  ],
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.mts",
+        "default": "./dist/esm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/cjs/index.cjs"
+      }
+    },
+    "./styles.css": "./dist/styles.css",
+    "./styles.layer.css": "./dist/styles.layer.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bccampus/aria-live-broadcast.git"
+  },
+  "workspaces": [
+    "docs"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "bugs": "https://github.com/bccampus/aria-live-broadcast/issues"
+}
